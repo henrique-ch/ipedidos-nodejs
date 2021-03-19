@@ -12,15 +12,24 @@ routes.get("/", function (req, res) {
 });
 
 //rptas produtos
-routes.get("/products", ProductController.index);
-routes.post("/product", ProductController.store);
+routes.get("/src/views/Products.html", function (req, res) {
+  res.sendFile(__dirname + "/views/Products.html");
+});
+routes.get("/listproducts", ProductController.index);
+routes.post("/src/views/Products.html/product", ProductController.store);
 
 //rotas clientes
-routes.get("/clients", ClientController.index);
-routes.post("/client", ClientController.create);
+routes.get("/src/views/Clients.html", function (req, res) {
+  res.sendFile(__dirname + "/views/Clients.html");
+});
+routes.get("/listclients", ClientController.index);
+routes.post("/src/views/Clients.html/client", ClientController.store);
 
 //rotas pedidos
-routes.get("/orders", OrderController.index);
-routes.post("/order", OrderController.store);
+routes.get("/src/views/Orders.html", function (req, res) {
+  res.sendFile(__dirname + "/views/Orders.html");
+});
+routes.get("/listorders", OrderController.index);
+routes.post("//src/views/Orders.html/order", OrderController.store);
 
 module.exports = routes;

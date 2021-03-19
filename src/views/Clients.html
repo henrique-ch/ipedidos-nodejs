@@ -77,23 +77,30 @@
     </style>
   </head>
   <body>
+    <h1>Cadastro de Clientes</h1>
+
     <!-- Corpo -->
     <div id="corpo">
       <!-- Formulário -->
       <div id="formulario">
-        <form action="insere.php" method="post">
+        <form action="/src/views/Clients.html/client" method="post">
           <div class="data direita" id="">
             <label for="data_de_nascimento">Data de Nascimento:</label><br />
-            <input type="text" size="25" placeholder="__/__/____" />
+            <input
+              type="text"
+              size="25"
+              name="birth_date"
+              placeholder="__/__/____"
+            />
           </div>
 
           <div class="esquerda" id="">
             <label for="nome">Nome:</label><br />
-            <input type="text" size="35" placeholder="Nome" />
+            <input type="text" size="35" name="name" placeholder="Nome" />
           </div>
           <div class="telefone esquerda" id="">
             <label for="telefone">Telefone:</label><br />
-            <input type="text" placeholder="0000-0000" />
+            <input type="text" name="fone" placeholder="0000-0000" />
           </div>
 
           <br />

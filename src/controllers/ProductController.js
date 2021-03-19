@@ -10,7 +10,15 @@ module.exports = {
 
   async store(req, res) {
     const product = await Product.create(req.body);
+    res.json(product);
 
-    return res.json(product);
+    new Product(product)
+      .save()
+      .then(() => {
+        console.log("Produto salvo com sucesso!");
+      })
+      .catch((err) => {
+        console.log("Erro ao salvar produto!");
+      });
   },
 };

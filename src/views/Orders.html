@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Cadastro Clientes</title>
+    <title>Cadastro Produtos</title>
+
     <style>
       body {
         border-top: 50px solid #27ae60;
@@ -25,7 +26,7 @@
       }
 
       #corpo {
-        margin: 50px 150px;
+        margin: 100px 270px;
       }
 
       #formulario {
@@ -35,11 +36,11 @@
 
       #formulario .direita {
         float: right;
-        width: 50%;
+        width: 60%;
+        position: static;
       }
 
       #formulario .esquerda {
-        float: left;
         width: 50%;
       }
 
@@ -51,7 +52,7 @@
 
       #formulario input {
         padding: 9px;
-        border: 1px solid #cccccc;
+        border: 2px solid #cccccc;
         background: #e8efe4;
         border-radius: 4px;
         color: #363636;
@@ -76,28 +77,53 @@
       }
     </style>
   </head>
-  <script></script>
-
   <body>
-    <h1>Cadastro de Produtos</h1>
+    <h1>Tela de Pedidos</h1>
+
     <!-- Corpo -->
     <div id="corpo">
       <!-- Formulário -->
       <div id="formulario">
-        <form action="/src/views/Products.html/product" method="post">
-          <div class="esquerda" id="">
-            <label for="name">Nome:</label><br />
-            <input type="text" size="35" name="name" placeholder="Nome" />
+        <form action="/src/views/Orders.html/order" method="post">
+          <div class="esquerda" id="cliente">
+            <label for="nome">Cliente:</label><br />
+
+            <input
+              type="text"
+              size="100"
+              name="name"
+              placeholder="Selecionar..."
+            />
           </div>
-          <div class="value" id="">
-            <label for="value">Valor R$:</label><br />
-            <input type="text" name="value" placeholder="R$" />
+
+          <div class="esquerda" id="">
+            <label for="telefone">Produto:</label><br />
+            <input
+              type="text"
+              size="100"
+              name="fone"
+              placeholder="Selecionar..."
+            />
+          </div>
+          <div class="direita" id="">
+            <label for="telefone">Quantidade:</label><br />
+            <input type="text" name="fone" placeholder="0" />
+          </div>
+          <div class="esquerda" id="">
+            <label for="telefone">Valor:</label><br />
+            <input type="text" name="fone" placeholder="R$" />
+          </div>
+          <div class="direita" id="">
+            <label for="telefone">Valor Total</label><br />
+            <input type="text" name="fone" placeholder="R$" />
           </div>
 
           <br />
-          <input type="submit" value="Cadastrar" class="botao" />
+          <input type="submit" value="Incluir" class="botao" />
         </form>
       </div>
+      <!-- /Formulário -->
     </div>
+    <!-- /Corpo -->
   </body>
 </html>
