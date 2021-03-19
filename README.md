@@ -14,7 +14,7 @@ Inclusão de Pedidos
 ![image](https://user-images.githubusercontent.com/50886743/111823939-51117c00-88c4-11eb-9442-e4ae5d684be4.png)
 ![image](https://user-images.githubusercontent.com/50886743/111823965-5a024d80-88c4-11eb-9855-6568567e671d.png)
 
-## Instalaçaõ
+## Instalação
 ### API Rest Node
 * Node:10.18.1 | Download >(https://nodejs.org/en/)
 * npm:6.13.4 | Faz parte da instalação do Node
@@ -24,3 +24,6 @@ Inclusão de Pedidos
 <h3>Instale o Node e o Yarn</h3>
 Abra um terminal e navegue até a pasta backend
 Insira o comando:
+```
+npm install
+```
