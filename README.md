@@ -15,10 +15,10 @@ Inclusão de Pedidos
 ![image](https://user-images.githubusercontent.com/50886743/111823965-5a024d80-88c4-11eb-9855-6568567e671d.png)
 
 ### API Rest Node
-- [x] Node:10.18.1 | Download >(https://nodejs.org/en/)
-  [x] npm:6.13.4 | Faz parte da instalação do Node
-  [x] yarn:1.22.0 | Download
-  [x] Instalção das dependências
+* Node:10.18.1 | Download >(https://nodejs.org/en/)
+* npm:6.13.4 | Faz parte da instalação do Node
+* yarn:1.22.0 | Download
+* Instalção das dependências
 
 <h3>Instale o Node e o Yarn</h3>
 Abra um terminal e navegue até a pasta backend
