@@ -17,9 +17,9 @@ Inclusão de Pedidos
 ## Instalação
 ### Banco de Dados
 ### API Rest Node
-* Node:10.18.1 | [Download](https://nodejs.org/en/)
-* npm:6.13.4 | Faz parte da instalação do Node
-* yarn:1.22.0 | [Download](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+* Node:12.18.4 | [Download](https://nodejs.org/en/)
+* npm:6.14.6 | Faz parte da instalação do Node
+* yarn:1.22.5 | [Download](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 <h4>Instalção das dependências</h4>
 
 1. Instale o Node e o Yarn
