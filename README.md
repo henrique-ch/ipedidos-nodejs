@@ -16,7 +16,7 @@ Inclusão de Pedidos
 
 ## Instalação
 ### API Rest Node
-* Node:10.18.1 | Download >(https://nodejs.org/en/)
+* Node:10.18.1 | [Download](https://nodejs.org/en/)
 * npm:6.13.4 | Faz parte da instalação do Node
 * yarn:1.22.0 | Download
 * Instalção das dependências
@@ -24,6 +24,8 @@ Inclusão de Pedidos
 <h3>Instale o Node e o Yarn</h3>
 Abra um terminal e navegue até a pasta backend
 Insira o comando:
+
 ```
 npm install
+
 ```
