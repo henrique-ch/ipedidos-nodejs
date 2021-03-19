@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Float = require("mongoose-float").loadType(mongoose);
 
 const ProductSchema = new mongoose.Schema({
   name: {
@@ -6,8 +7,8 @@ const ProductSchema = new mongoose.Schema({
     required: true,
   },
   value: {
-    type: Number,
-    requerid: true,
+    type: Float,
+    required: true,
   },
 });
 

@@ -1,17 +1,21 @@
 const mongoose = require("mongoose");
+const Float = require("mongoose-float").loadType(mongoose);
 
 const OrderSchema = new mongoose.Schema({
+  id: {
+    type: Number,
+  },
   name: {
     type: String,
     required: true,
   },
   product: {
-    type: Number,
-    requerid: true,
+    type: String,
+    required: true,
   },
   value: {
-    type: Number,
-    requerid: true,
+    type: Float,
+    required: true,
   },
   createdAt: {
     type: Date,

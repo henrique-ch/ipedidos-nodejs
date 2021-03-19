@@ -7,4 +7,10 @@ module.exports = {
 
     return res.json(clients);
   },
+
+  async create(req, res) {
+    const client = await Client.create(req.body);
+
+    return res.json(client);
+  },
 };

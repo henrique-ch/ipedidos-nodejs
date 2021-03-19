@@ -6,4 +6,4 @@ mongoose.connect("mongodb://localhost:27017/ipedidos", {
   useUnifiedTopology: true,
 });
 
-requireDir("../models/");
+requireDir("../models");

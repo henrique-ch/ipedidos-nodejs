@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Float = require("mongoose-float").loadType(mongoose);
 
 const ClientSchema = new mongoose.Schema({
   name: {
@@ -7,11 +8,11 @@ const ClientSchema = new mongoose.Schema({
   },
   fone: {
     type: Number,
-    requerid: true,
+    required: true,
   },
   birth_date: {
-    type: Number,
-    requerid: true,
+    type: Date,
+    required: true,
   },
 });
 
