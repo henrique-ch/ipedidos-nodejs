@@ -16,7 +16,36 @@ Inclusão de Pedidos
 
 ## Instalação
 ### Banco de Dados
-* MongoDB | [Download](https://www.mongodb.com/try/download/community?tck=docs_server)
+
+Faça download do Docker [Download](https://www.docker.com/products/docker-desktop)
+
+* Caso esteja em um ambiente Windows, na instalação não escolher para usar container windows, deixar a opção que já está pré-selecionada
+
+1. Abra o CMD e digite:
+
+```
+docker pull mongo
+
+```
+
+2. Subir a maquina virtual:
+
+
+```
+docker run --name mongodb -p 27017:27017 -d mongo
+
+```
+
+3. Verificar se a imagem está rodando:
+
+
+```
+docker ps
+
+```
+
+4.  Vamos baixar um gerenciador para o mongo ROBO3T [Download](https://robomongo.org/download)
+
 ### API Rest Node
 * Node:12.18.4 | [Download](https://nodejs.org/en/)
 * npm:6.14.6 | Faz parte da instalação do Node
