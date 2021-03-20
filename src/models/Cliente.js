@@ -14,6 +14,10 @@ const ClientSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  sit: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 mongoose.model("Client", ClientSchema);
