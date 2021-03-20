@@ -82,39 +82,58 @@
 
     <!-- Corpo -->
     <div id="corpo">
-      <!-- Formulário -->
+      <!-- FORMLULARIO ESTÁ INCOMPLETO. AINDA NAO ESTA FAZENDO BUSCAS E INSERCAO NO BANCO DE DADOS. ADICIONEI DADOS FAKES NA PESQUISA DE CLIENTES E PRODUTOS -->
+
       <div id="formulario">
         <form action="/src/views/Orders.html/order" method="post">
           <div class="esquerda" id="cliente">
-            <label for="nome">Cliente:</label><br />
+            <label for="cliente">Cliente:</label><br />
+            <!-- FORMLULARIO ESTÁ INCOMPLETO. AINDA NAO ESTA FAZENDO BUSCAS E INSERCAO NO BANCO DE DADOS. ADICIONEI DADOS FAKES NA PESQUISA DE CLIENTES E PRODUTOS -->
 
             <input
               type="text"
               size="100"
               name="name"
               placeholder="Selecionar..."
+              list="nome"
             />
+            <datalist id="nome">
+              Cliente:
+              <option value="Carlos Henrique"></option>
+              <option value="Henrique"></option>
+              <option value="Vinicius"></option>
+              <option value="Emilio"></option></datalist
+            ><br />
           </div>
+          <!-- FORMLULARIO ESTÁ INCOMPLETO. AINDA NAO ESTA FAZENDO BUSCAS E INSERCAO NO BANCO DE DADOS. ADICIONEI DADOS FAKES NA PESQUISA DE CLIENTES E PRODUTOS -->
 
           <div class="esquerda" id="">
-            <label for="telefone">Produto:</label><br />
+            <label for="produto">Produto:</label><br />
             <input
               type="text"
               size="100"
-              name="fone"
+              name="name"
               placeholder="Selecionar..."
+              list="produto"
             />
+            <datalist id="produto">
+              Produto:
+              <option value="Xtudo"></option>
+              <option value="Salada"></option>
+              <option value="Suco"></option>
+              <option value="Milkshake"></option></datalist
+            ><br />
           </div>
           <div class="direita" id="">
-            <label for="telefone">Quantidade:</label><br />
+            <label for="quantidade">Quantidade:</label><br />
             <input type="text" name="fone" placeholder="0" />
           </div>
           <div class="esquerda" id="">
-            <label for="telefone">Valor:</label><br />
+            <label for="valor">Valor:</label><br />
             <input type="text" name="fone" placeholder="R$" />
           </div>
           <div class="direita" id="">
-            <label for="telefone">Valor Total</label><br />
+            <label for="valor total">Valor Total</label><br />
             <input type="text" name="fone" placeholder="R$" />
           </div>
 

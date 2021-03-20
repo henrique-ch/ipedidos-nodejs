@@ -30,6 +30,6 @@ routes.get("/src/views/Orders.html", function (req, res) {
   res.sendFile(__dirname + "/views/Orders.html");
 });
 routes.get("/listorders", OrderController.index);
-routes.post("//src/views/Orders.html/order", OrderController.store);
+routes.post("/src/views/Orders.html/order", OrderController.store);
 
 module.exports = routes;

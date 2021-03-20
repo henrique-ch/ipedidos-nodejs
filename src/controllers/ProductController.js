@@ -15,7 +15,7 @@ module.exports = {
     new Product(product)
       .save()
       .then(() => {
-        console.log("Produto salvo com sucesso!");
+        console.send("Produto salvo com sucesso!");
       })
       .catch((err) => {
         console.log("Erro ao salvar produto!");
