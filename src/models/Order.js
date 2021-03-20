@@ -17,6 +17,9 @@ const OrderSchema = new mongoose.Schema({
     type: Float,
     required: true,
   },
+  amount: {
+    type: Float,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
